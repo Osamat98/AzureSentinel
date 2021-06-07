@@ -1,5 +1,3 @@
-https://github.com/Osamat98
-
 {
   "version": "Notebook/1.0",
   "items": [
@@ -604,6 +602,6 @@ https://github.com/Osamat98
       "name": "group - 14"
     }
   ],
- 
-
-https://github.com/Osamat98
+   "fromTemplateId": "sentinel-SentinelMultiTenant",
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}
