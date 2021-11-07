@@ -1,0 +1,6 @@
+symantec_edr_CL
+| extend RawData=parse_json(RawData)
+| mv-expand bagexpansion=array RawData
+| evaluate bag_unpack(RawData)
+| extend Key=tostring(RawData[0]), Value=(RawData[1])
+| evaluate pivot(Key, any(Value),TimeGenerated)
